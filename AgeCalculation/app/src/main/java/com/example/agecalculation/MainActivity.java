@@ -23,11 +23,12 @@ public class MainActivity extends AppCompatActivity {
         edtYear=(EditText)findViewById(R.id.editText);
         txtAge = (TextView)findViewById(R.id.textView3);
         btnResult=(Button)findViewById(R.id.btnAge);
-        birthYear = Integer.parseInt(edtYear.getText().toString());
+
 
         btnResult.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                birthYear = Integer.parseInt(edtYear.getText().toString());
                 finalResult= 2020-birthYear;
                 txtAge.setText(" "+finalResult);
             }
